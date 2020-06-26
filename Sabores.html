@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<title>Bene´s Cake</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="stylesheet" type="text/css" href="CSS/w3.css">
+<style>
+
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url(imagens/fundo.png);
+  min-height: 75%;
+}
+.menu {
+  display: none;
+}
+
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="index.html" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="Sobre.html" class="w3-button w3-block w3-black">SOBRE</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="Sabores.html" class="w3-button w3-block w3-black">SABORES</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="Contatos.html" class="w3-button w3-block w3-black">CONTATO</a>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+
+    
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Sabores</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">Bolos</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">Bebidas</div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+      
+      <h5><center>Cup Cake</h5></center> 
+     <center> <img src="imagens\cupcake.png"style="width:100%;max-width:300px;margin-top:32px;"class="w3-hover-opacity"> </center>
+      <center><p class="w3-text-grey">Cup cake de massa branca com recheio de baunilha 5.50</p><br></center>
+	  
+    
+      <h5><center>Bolo Indiano</h5></center>
+      <center> <img src="imagens\indiano.png" style="width:100%;max-width:300px;margin-top:32px;"class="w3-hover-opacity"></center>
+      <center><p class="w3-text-grey">Bolo de 7 camadas de chocolate belga e mel 7.00</p><br></center>
+    
+      <h5><center>Bolo de uva</h5></center>
+      <center> <img src="imagens\uva.png" style="width:100%;max-width:300px;margin-top:32px;"class="w3-hover-opacity"></center>
+      <center><p class="w3-text-grey">Bolo de uva com leite em pó, com cobertura de côco 7.50</p><br><center>
+    
+      <h5>Bolo de cenoura</h5>
+      <center> <img src="imagens\cenoura.png" style="width:100%;max-width:300px;margin-top:32px;"class="w3-hover-opacity"></center>
+      <center><p class="w3-text-grey">Bolo de cenoura com cobertura de chocolate 7.50</p><br></center>
+    
+      <h5>Bolo de milho</h5>
+      <center><center> <img src="imagens\milho.png" style="width:100%;max-width:300px;margin-top:32px;"class="w3-hover-opacity"></center>
+      <center><p class="w3-text-grey">Bolo de milho com açucar de confeiteiro 6.50</p></center>
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+      <h5><center>Coffee</h5></center>
+      <center> <img src="imagens\cafe.png" style="width:100%;max-width:300px;margin-top:32px;"class="w3-hover-opacity"></center>
+      <center><p class="w3-text-grey">Café expresso 2.50</p><br></center>
+    
+      <h5><center>Hot Chocolat</h5></center>
+      <center> <img src="imagens\chocolatequente.png" style="width:100%;max-width:300px;margin-top:32px;"class="w3-hover-opacity"></center>
+      <center><p class="w3-text-grey">Chocolate quente com uma pitada de sal 4.50</p><br></center>
+    
+      <h5><center>Corretto</h5><center>
+      <center> <img src="imagens\wisky.png" style="width:100%;max-width:300px;margin-top:32px;"class="w3-hover-opacity"></center>
+      <center><p class="w3-text-grey">Whisk com café 5.00</p><br></center>
+    
+      <h5><center>Chá Inglês</h5></center>
+      <center> <img src="imagens\cha.png" style="width:100%;max-width:300px;margin-top:32px;"class="w3-hover-opacity"></center>
+      <center><p class="w3-text-grey">Chá quente com leite 3.00</p><br></center>
+    
+      <h5><center>Soda</center></h5>
+      <center> <img src="imagens\refri.png" style="width:100%;max-width:300px;margin-top:32px;"class="w3-hover-opacity"></center>
+      <center><p class="w3-text-grey">Coca, Sprite, Fanta, etc. 6.50</p></center>
+    
+    </div>  
+	
+	
+   
+
+
+<!-- End page content -->
+</div>
+
+
+
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>

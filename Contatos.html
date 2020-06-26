@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<title>Bene´s Cake</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="stylesheet" type="text/css" href="CSS/w3.css">
+<style>
+
+
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="index.html" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="Sobre.html" class="w3-button w3-block w3-black">SOBRE</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="Sabores.html" class="w3-button w3-block w3-black">SABORES</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="Contatos.html" class="w3-button w3-block w3-black">CONTATO</a>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+
+    
+
+	<!-- Imagem do contatos -->
+<br>
+   <center><img src="imagens\branco.png" style="width:100%;max-width:800px;margin-top:32px;"></center>
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Contatos</span></h5>
+    
+    
+    <p><span class="w3-tag"></span>Também oferecemos salas de reuniões, grande ou pequena. Nos entendemos suas necessidades e cuidaremos de tudo para sua satisfação</p>
+    <p><strong>Reservas</strong> </p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Nome" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Quantos lugares" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Dia e horário" required name="date" value="2019-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Mensagem" required name="Mensagem"></p>
+      <p><button class="w3-button w3-black" type="submit">ENVIAR</button></p>
+    </form>
+  </div>
+</div>
+
+
+
+<!-- End page content -->
+</div>
+
+
+
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
